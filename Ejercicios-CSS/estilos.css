@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to left, #c0fafa, #00b7c4 );
+}
+
+div {
+    border: 2px solid rgba(140, 245, 245, 0.733);
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 12px;
+    box-shadow: 9px 5px #749db4;
+}
+
+#icono {
+    width: 100px;
+    float: left;
+    height: auto;
+    border-radius: 50%;
+}
+
+div.especial h3 {
+    text-shadow: 5px 3px #749db4;
+}
