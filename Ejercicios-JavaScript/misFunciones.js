@@ -15,23 +15,24 @@ const cambiarunidades = (id, valor) => {
         unid_pie.value="";
         unid_yarda.value="";
     }else if(id=="metro"){
-        unid_pulgada.value=(39.3701*valor);
-        unid_pie.value=(3.28084*valor);
-        unid_yarda.value=(1.09361*valor);
+        unid_pulgada.value=Math.round(39.3701*valor);
+        unid_pie.value=Math.round(3.28084*valor);
+        unid_yarda.value=Math.round(1.09361*valor);
     }else if(id=="pulgada"){
-        unid_metro.value = (0.0254*valor);
-        unid_pie.value = (0.0833333*valor);
-        unid_yarda.value = (0.0277778*valor);
+        unid_metro.value = Math.round(0.0254*valor);
+        unid_pie.value = Math.round(0.0833333*valor);
+        unid_yarda.value = Math.round(0.0277778*valor);
     }else if(id=="pie"){
-        unid_metro.value = (0,3048*valor);
-        unid_pulgada.value = (12*valor);
-        unid_yarda.value = (0.333333*valor);
+        unid_metro.value = Math.round(0,3048*valor);
+        unid_pulgada.value = Math.round(12*valor);
+        unid_yarda.value = Math.round(0.333333*valor);
     }else if(id=="yarda"){
-        unid_metro.value = (0.9144*valor);
-        unid_pulgada.value = (36*valor);
-        unid_pie.value = (3*valor);
+        unid_metro.value = Math.round(0.9144*valor);
+        unid_pulgada.value = Math.round(36*valor);
+        unid_pie.value = Math.round(3*valor);
         
     }
+
 
 }
 
