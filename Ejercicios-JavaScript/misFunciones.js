@@ -50,3 +50,11 @@ const convertirGR = id => {
     gradosInput= grad;
     radianesInput= rad;
 }
+
+function mostrar_ocultar(valorMO){
+    if(valorMO=="val_mostrar"){
+        document.getElementById("divMO").style.display = 'block';
+    }else if(valorMO=="val_ocultar"){
+        document.getElementById("divMO").style.display = 'none';
+    }
+}
