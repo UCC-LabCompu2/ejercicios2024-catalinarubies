@@ -114,3 +114,21 @@ function cargarResultado(){
 
     document.getElementById("dist").value = can + " " + un;
 }
+
+function guardarlocalstorage{
+    let distancia, unidad;
+    distancia = document.getElementById("distancia").value;
+    unidad= document.getElementsByName("unidades")[0].value;
+    localStorage.setItem("distanciaLS", distancia);
+    localStorage.setItem("unidadesLS", unidad);
+    window.open("2web.html");
+
+}
+
+function cargarRlocalstorage(){
+    let cant, un;
+    cant = localStorage.getItem("distanciaLS");
+    un= localStorage.getItem("unidadesLS");
+
+    document.getElementById("dist").value = cant + " " + un;
+}
