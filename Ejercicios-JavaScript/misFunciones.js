@@ -96,3 +96,21 @@ function calculardivision(){
     document.getElementsByName("div_total")[0].innerHTML = num1 / num2;
 
 }
+
+function cargarweb(){
+    var cant, unidad, urlComp;
+    cant = document.getElementById("distancia").value;
+    unidad= document.getElementsByName("unidades")[0].value;
+    urlComp="segundaWeb.html#" + cant + "#" + unidad;
+    window.open(urlComp);
+}
+
+function cargarResultado(){
+    var urlComp, can, un;
+    urlComp = window.location.href.split("#");
+
+    can = urlComp[1];
+    un = urlComp[2];
+
+    document.getElementById("dist").value = can + " " + un;
+}
