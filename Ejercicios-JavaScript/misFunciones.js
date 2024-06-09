@@ -105,17 +105,7 @@ function cargarweb(){
     window.open(urlComp);
 }
 
-function cargarResultado(){
-    var urlComp, can, un;
-    urlComp = window.location.href.split("#");
-
-    can = urlComp[1];
-    un = urlComp[2];
-
-    document.getElementById("dist").value = can + " " + un;
-}
-
-function guardarlocalstorage{
+function guardarlocalstorage(){
     let distancia, unidad;
     distancia = document.getElementById("distancia").value;
     unidad= document.getElementsByName("unidades")[0].value;
